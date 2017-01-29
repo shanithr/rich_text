@@ -1,0 +1,16 @@
+# Compiled Object files
+*.obj
+*/bin/*
+*/obj/*
+
+# Precompiled Headers
+*.pch
+
+# Compiled Dynamic libraries
+*.dll
+
+# Compiled Static libraries
+*.lib
+
+# Executables
+*.exe
