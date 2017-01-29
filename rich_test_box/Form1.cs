@@ -75,5 +75,26 @@ namespace rich_test_box
                 richTextBox1.SelectionColor = Color.Blue;
         }
 
+        private void customToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colordlg = new ColorDialog();
+            colordlg.Color =richTextBox1.SelectionColor;
+            if (colordlg.ShowDialog()==DialogResult.OK)
+            {
+                richTextBox1.SelectionColor = colordlg.Color;
+            }
+
+        }
+        
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+        ToolTip ex = new ToolTip();
+
+        private void exitButton_MouseHover(object sender, EventArgs e)
+        {
+            ex.Show("exit", exitButton);
+        }
     }
 }
